@@ -1,0 +1,250 @@
+
+* {
+padding: 0;
+margin: 0;    
+}
+
+html {
+box-sizing: border-box;
+}
+
+.flex-container {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+}
+
+.left-column { 
+width: 50%;
+background: #003750;
+padding: 3%;
+}
+
+.top a {
+display: block;       
+color: #E5F3FA; 
+font: normal 900 1.6em futura, sans-serif; 
+text-decoration: none;  
+}
+
+.top img {
+width: 30px;
+height: 30px;    
+}
+
+.top span {
+display: inline-block;    
+width: 45%;
+}
+
+.content {
+width: 75%;
+height: 300px;
+margin: 35% 0 0 5%;
+}
+
+.content h2 {
+color: #E5F3FA; 
+font: normal 700 1.4em futura, sans-serif; 
+}
+
+.content p {
+color: #E5F3FA; 
+font: normal 200 1em futura, sans-serif; 
+margin-bottom: 25px;
+}
+
+.content img {
+width: 24px !important;
+height: 24px !important;
+position: relative;
+top: 5px;
+left: -10px;
+}
+
+.content span:first-of-type {
+display: inline-block;
+width: 45%;
+height: 50px;
+border-radius: 15px;
+padding-top: 10px;
+background: #31AFE6;
+font: normal 700 1em futura, sans-serif; 
+color:#003750;
+text-align: center;
+}
+
+.content span:last-of-type {
+display: inline-block;
+width: 45%;
+height: 50px;
+border-radius: 15px;
+margin-left: 15px;
+padding-top: 10px;
+background: #D4EBF5;
+font: normal 700 1em futura, sans-serif; 
+color:#003750;
+text-align: center;
+}
+
+.right-column {
+width: 50%;
+background: #EEF5F8;   
+padding: 3%;
+}
+
+#signup-card {
+width: 50%;
+background: #fff;
+border-radius: 25px;
+padding: 10% 5% 5% 5%;
+margin: 15% auto 0 auto;
+}
+
+#signup-card h3 {
+color: #02172F;
+font: normal 900 1.4em futura, sans-serif;
+margin-bottom: 25px;
+}    
+
+#signup-card form input {
+width: 95%;
+height: 50px;
+color: #AEC6D1;
+font: normal 400 1em monserrat, sans-serif;
+border: 1px solid #D9D5D5;
+border-radius: 10px;
+margin-bottom: 25px;
+padding-left: 5px;
+} 
+
+#signup-card form input::placeholder {
+padding-left: 5px;
+color: #AEC6D1;
+font: normal 400 1em monserrat, sans-serif;
+}
+
+#signup-card form input[type='submit'] {
+width: 95%;
+height: 60px;
+background: #31AFE6;    
+color: #0C374B;
+font: normal 600 1em monserrat, sans-serif;
+cursor: pointer;
+}
+
+
+#signup-card form input[type='button'] {
+width: 95%;
+height: 60px;    
+background: #0C374B;        
+color: #E5F3FA;
+font: normal 600 1em monserrat, sans-serif;
+cursor: pointer;
+}
+
+@media(max-width: 1380px){
+.top a {
+margin-top: 40%; 
+}
+
+.top {
+padding-left: 3%;    
+}
+
+.flex-container {
+flex-direction: column;
+}
+
+.left-column { 
+width: 100%;
+}
+
+.content {
+margin: 10% 0 0 5%;
+}
+
+
+.right-column {
+width: 100%;
+}
+
+#signup-card {
+width: 40%;
+background: #fff;
+border-radius: 25px;
+padding: 8% 5% 5% 5%;
+margin: 15% auto 0 auto;
+}
+#signup-card h3 {
+color: #02172F;
+font: normal 900 1.2em futura, sans-serif;
+margin-bottom: 25px;
+} 
+
+.content span:first-of-type {
+width: 25%;
+}
+
+.content span:last-of-type {
+width: 25%;
+}
+
+
+}
+
+@media(max-width: 1024px) {
+
+
+.left-column { 
+width: 100%;
+background: #003750;
+padding: 3%;
+}
+
+.top a {
+margin-top: 30%; 
+}
+    
+
+#signup-card {
+width: 60%;
+background: #fff;
+border-radius: 25px;
+padding: 8% 5% 5% 5%;
+margin: 15% auto 0 auto;
+}
+#signup-card h3 {
+color: #02172F;
+font: normal 900 1.2em futura, sans-serif;
+margin-bottom: 25px;
+}
+
+.content span:first-of-type {
+width: 100%;
+font-size: 1em;
+}
+
+.content span:last-of-type {
+width: 100%;
+margin: 30px 0 0 0;
+font-size: 1em;
+}
+
+.content h2 {
+color: #E5F3FA; 
+font: normal 700 1.2em futura, sans-serif; 
+}
+
+.content p {
+color: #E5F3FA; 
+font: normal 200 0.8em futura, sans-serif; 
+margin-bottom: 25px;
+}
+
+}

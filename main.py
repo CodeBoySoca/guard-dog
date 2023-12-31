@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  pass
+  return render_template('index.html')
 
 @app.route('/logout')
 def logout():

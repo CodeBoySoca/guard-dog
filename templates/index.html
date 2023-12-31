@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="flex-container">
+  <div class="left-column">
+    <div class="top"><a href="{{ url_for('index')}}">
+        <img src="{{ url_for('static', filename='images/logo.svg')}}" alt="">
+       <span>Guard Dog</span></a>
+    </div>
+    <div class="content">
+        <h2>Online Password Manager</h2>
+        <p>Save passwords, account details and important notes</p>
+        <span><img src="{{ url_for('static', filename='images/lock-solid.svg')}}" alt="">Secure passwords</span>
+        <span><img src="{{ url_for('static', filename='images/clipboard-solid.svg')}}" alt="">Save notes</span>
+    </div>
+  </div>
+  <div class="right-column">
+    <div id="signup-card">
+        <h3>Create an account today</h3>
+        <form method="post">
+            <input type="text" name="fullname" placeholder="Full name">
+            <input type="email" name="email" placeholder="E-mail address">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="confirm-password" placeholder="Confirm password">
+            <input type="submit" value="Sign up">
+            <input type="button" value="Sign in" id="signin">
+        </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
