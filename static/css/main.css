@@ -191,7 +191,7 @@ width: 60%;
 background: #fff;
 border-radius: 25px;
 padding: 5%;
-margin: 15% auto 0 auto;
+margin: 10% auto 0 auto;
 filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.2))
 }
 
@@ -203,7 +203,7 @@ margin-bottom: 25px;
 
 .accounts {
 height: 50px;    
-padding-top: 15px;;
+padding-top: 15px;
 border-bottom: 1px solid rgba(0,0,0, 0.2);    
 }
 
@@ -255,6 +255,20 @@ text-decoration: underline;
 color: #003750; 
 font: normal 400 0.9em montserrat, sans-serif; 
 margin-bottom: 5px;
+}
+
+#add-item {
+background: #003750;
+color: #fff; 
+font: normal 400 1em monserrat, sans-serif;
+text-decoration: none;
+display: block;
+border-radius: 10px;
+width: 150px;
+height: 45px;
+text-align: center;
+line-height: 2.8em; 
+margin: 3% auto 0 auto;   
 }
 
 
