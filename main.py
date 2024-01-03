@@ -1,5 +1,6 @@
 from flask import Flask , render_template
 from models import *
+import uuid
 
 app = Flask(__name__)
 
@@ -33,6 +34,15 @@ def notes():
 
 @app.route('/dashboard/account-manager')
 def account_manager():
+    user_accounts=Users.objects(name='Johann Austin')
+    return render_template('account-manager.html', accounts=user_accounts)
+
+@app.route('/update')
+def update():
+    pass
+
+@app.route('/remove')
+def remove():
     pass
 
 if __name__ == '__main__':

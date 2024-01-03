@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="flex-container">
+    {% include 'sidebar.html' %}
+    <div class="account-container">
+        <div class="account-card"> 
+       <h3>Accounts</h3>
+       
+       {% for account in accounts[0]['accounts'] %}
+        <div class="accounts">
+             <p>{{ account.name }}</p>
+             <span>{{ account.category }}</span>
+             <ul>
+              <li><a href="{{ url_for('update', id=account.id) }} ">Update</a></li>
+              <li><a href="{{ url_for('remove', id=account.id) }}">Remove</a></li>
+            </ul>
+          </div>
+        {% endfor %}
+        <a href="" id="">Add item</a>
+    </div>
+
+   </div>
+</div>
+
+{% endblock %}

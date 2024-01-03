@@ -148,6 +148,116 @@ font: normal 600 1em monserrat, sans-serif;
 cursor: pointer;
 }
 
+#sidebar {
+width: 25%;
+background: #003750;
+padding: 3%;
+}
+
+#sidebar .top {
+
+}
+
+nav ul {
+margin-top: 75px
+}
+
+nav ul li {
+list-style-type: none;
+margin-bottom: 35px;
+}
+
+nav ul li img {
+margin-top: 10px;
+padding-right: 25px;
+}
+
+nav ul li a {
+color: #E5F3FA;
+font: normal 600 1em future, sans-serif;
+text-decoration: none;
+display: inline-block;
+position: relative;
+top: -5px;
+}
+
+.account-container {
+width: 90%;    
+background: #D4EBF5;
+}
+
+.account-card {
+width: 60%;
+background: #fff;
+border-radius: 25px;
+padding: 5%;
+margin: 15% auto 0 auto;
+filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.2))
+}
+
+.account-card h3 {
+color: #02172F;
+font: normal 900 1.4em futura, sans-serif;
+margin-bottom: 25px;
+}
+
+.accounts {
+height: 50px;    
+padding-top: 15px;;
+border-bottom: 1px solid rgba(0,0,0, 0.2);    
+}
+
+.accounts ul {
+width: 30%;
+float: right;
+margin-top: -20px;
+}
+
+.accounts ul li {
+list-style-type: none;  
+display: inline; 
+margin-right: 5px; 
+}
+
+.accounts ul li:first-of-type a{
+background: #32AFE6;
+color: #fff; 
+font: normal 400 1em monserrat, sans-serif;
+text-decoration: none;
+display: inline-block;
+border-radius: 10px;
+width: 100px;
+height: 35px;
+text-align: center;
+line-height: 2em;
+}
+.accounts ul li:last-of-type a{
+background: #E01A1A; 
+color: #fff;
+font: normal 300 1em monserrat, sans-serif;
+text-decoration: none;
+display: inline-block;
+border-radius: 10px;
+width: 100px;
+height: 35px;
+text-align: center;
+line-height: 2em;
+}
+
+.accounts p {
+color: #003750; 
+font: normal 600 1em montserrat, sans-serif; 
+margin-bottom: 5px;
+text-decoration: underline;
+}
+
+.accounts span {
+color: #003750; 
+font: normal 400 0.9em montserrat, sans-serif; 
+margin-bottom: 5px;
+}
+
+
 @media(max-width: 1380px){
 .top a {
 margin-top: 40%; 
