@@ -1,4 +1,10 @@
 
+
+
+
+
+/* Global */
+
 * {
 padding: 0;
 margin: 0;    
@@ -6,6 +12,35 @@ margin: 0;
 
 html {
 box-sizing: border-box;
+}
+
+#sidebar {
+width: 25%;
+background: #003750;
+padding: 3%;
+}
+
+nav ul {
+margin-top: 75px
+}
+
+nav ul li {
+list-style-type: none;
+margin-bottom: 35px;
+}
+
+nav ul li img {
+margin-top: 10px;
+padding-right: 25px;
+}
+
+nav ul li a {
+color: #E5F3FA;
+font: normal 600 1em future, sans-serif;
+text-decoration: none;
+display: inline-block;
+position: relative;
+top: -5px;
 }
 
 .flex-container {
@@ -25,6 +60,12 @@ background: #003750;
 padding: 3%;
 }
 
+.right-column {
+width: 50%;
+background: #EEF5F8;   
+padding: 3%;
+}
+
 .top a {
 display: block;       
 color: #E5F3FA; 
@@ -41,6 +82,11 @@ height: 30px;
 display: inline-block;    
 width: 45%;
 }
+
+/*********************/
+
+
+/* Homepage */
 
 .content {
 width: 75%;
@@ -92,12 +138,6 @@ color:#003750;
 text-align: center;
 }
 
-.right-column {
-width: 50%;
-background: #EEF5F8;   
-padding: 3%;
-}
-
 #signup-card {
 width: 50%;
 background: #fff;
@@ -138,7 +178,6 @@ font: normal 600 1em monserrat, sans-serif;
 cursor: pointer;
 }
 
-
 #signup-card form input[type='button'] {
 width: 95%;
 height: 60px;    
@@ -148,38 +187,98 @@ font: normal 600 1em monserrat, sans-serif;
 cursor: pointer;
 }
 
-#sidebar {
-width: 25%;
-background: #003750;
-padding: 3%;
+/*********************/
+
+
+
+
+/* Password generator */
+
+#password-generator {
+width: 90%;  
+background: #D4EBF5; 
 }
 
-#sidebar .top {
-
+#password-card {
+width: 35%;
+background: #fff;
+border-radius: 25px;
+padding: 5% 5% 5% 5%;
+margin: 10% auto 0 auto;
 }
 
-nav ul {
-margin-top: 75px
+#password-card h3 {
+color: #02172F;
+font: normal 900 1.4em futura, sans-serif;
+margin-bottom: 25px;
+}    
+    
+#password-card form input, #password-card form select {
+width: 100%;
+height: 50px;
+color: #AEC6D1;
+font: normal 400 1em monserrat, sans-serif;
+border: 1px solid #D9D5D5;
+border-radius: 10px;
+margin-bottom: 25px;
+padding-left: 5px;
+} 
+
+#password-card form input::placeholder {
+padding-left: 5px;
+color: #AEC6D1;
+font: normal 400 1em monserrat, sans-serif;
 }
 
-nav ul li {
-list-style-type: none;
-margin-bottom: 35px;
-}
 
-nav ul li img {
-margin-top: 10px;
-padding-right: 25px;
-}
+#generated-password {
+display: block;
+width: 100%;
+height: 50px;
+color: #AEC6D1;
+font: normal 400 1em monserrat, sans-serif;
+border: 1px solid #D9D5D5;
+border-radius: 10px;
+margin-bottom: 5px;
+padding-left: 5px;
+line-height: 3em;
+} 
 
-nav ul li a {
-color: #E5F3FA;
-font: normal 600 1em future, sans-serif;
-text-decoration: none;
-display: inline-block;
+#clipboardPasswd {
 position: relative;
-top: -5px;
+top: -45px;    
+left: 460px;
+cursor: pointer;
 }
+
+#clipboardPasswd img {
+width: 28px;
+height: 28px;    
+}
+
+#password-card button {
+width: 100%;
+height: 60px;    
+background: #0C374B;        
+color: #E5F3FA;
+font: normal 600 1em monserrat, sans-serif;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+}
+
+
+
+/*********************/
+
+
+/* Notes */
+
+
+
+/*********************/
+
+/* Account Manager  */
 
 .account-container {
 width: 90%;    
@@ -206,7 +305,7 @@ height: 50px;
 padding-top: 15px;
 border-bottom: 1px solid rgba(0,0,0, 0.2);    
 }
-
+    
 .accounts ul {
 width: 30%;
 float: right;
@@ -270,6 +369,12 @@ text-align: center;
 line-height: 2.8em; 
 margin: 3% auto 0 auto;   
 }
+
+/*********************/
+
+
+
+/* Media Queries  */
 
 
 @media(max-width: 1380px){
@@ -372,3 +477,6 @@ margin-bottom: 25px;
 }
 
 }
+
+
+/*********************/
