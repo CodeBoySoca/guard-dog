@@ -36,7 +36,8 @@ def password_generator():
 
 @app.route('/dashboard/notes')
 def notes():
-  pass
+  notes = Users.objects(name='Johann Austin')
+  return render_template('notes.html', notes=notes)
 
 @app.route('/dashboard/account-manager')
 def account_manager():

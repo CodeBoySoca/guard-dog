@@ -274,6 +274,83 @@ cursor: pointer;
 
 /* Notes */
 
+#notes {
+width: 90%;  
+background: #D4EBF5; 
+}
+
+#notes-card {
+width: 60%;
+background: #fff;
+border-radius: 25px;
+padding: 5% 5% 5% 5%;
+margin: 10% auto 0 auto;
+}
+
+#notes-card h3 {
+color: #02172F;
+font: normal 900 1.4em futura, sans-serif;
+margin-bottom: 25px;
+} 
+
+.notes {
+height: 50px;    
+padding-top: 15px;
+border-bottom: 1px solid rgba(0,0,0, 0.2);    
+}
+
+.notes ul {
+width: 30%;
+float: right;
+margin-top: -20px;
+}
+
+.notes ul li {
+list-style-type: none;  
+display: inline; 
+margin-right: 5px; 
+}
+
+.notes ul li:first-of-type a {
+background: #32AFE6;
+color: #fff; 
+font: normal 400 1em monserrat, sans-serif;
+text-decoration: none;
+display: inline-block;
+border-radius: 10px;
+width: 100px;
+height: 35px;
+text-align: center;
+line-height: 2em;
+}
+
+.notes ul li:last-of-type a {
+background: #E01A1A; 
+color: #fff;
+font: normal 300 1em monserrat, sans-serif;
+text-decoration: none;
+display: inline-block;
+border-radius: 10px;
+width: 100px;
+height: 35px;
+text-align: center;
+line-height: 2em;
+}
+
+.notes p {
+color: #003750; 
+font: normal 600 1em montserrat, sans-serif; 
+margin-bottom: 5px;
+text-decoration: underline;
+}
+
+.notes span {
+color: #003750; 
+font: normal 400 0.9em montserrat, sans-serif; 
+margin-bottom: 5px;
+}
+
+
 
 
 /*********************/
