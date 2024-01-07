@@ -30,14 +30,21 @@ def dashboard():
 @app.route('/dashboard/password-generator', methods=['GET', 'POST'])
 def password_generator():
     if request.method == 'POST':
-           password_generator = PasswordGenerator(length=int(request.form.get('password_length')), characters=str(request.form.get('password_characters')))
-           return render_template('password-generator.html', password=password_generator.generate_password())
+        if len(request.form.get('password_length')) < 1:
+            password_generator = PasswordGenerator(length=8, characters=str(request.form.get('password_characters')))
+        else:    
+            password_generator = PasswordGenerator(length=int(request.form.get('password_length')), characters=str(request.form.get('password_characters')))
+        return render_template('password-generator.html', password=password_generator.generate_password())
     return render_template('password-generator.html')
 
 @app.route('/dashboard/notes')
 def notes():
   notes = Users.objects(name='Johann Austin')
   return render_template('notes.html', notes=notes)
+
+@app.route('/add/note')
+def add_note():
+    return render_template('note.html')
 
 @app.route('/dashboard/account-manager')
 def account_manager():
